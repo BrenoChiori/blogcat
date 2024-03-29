@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62,5%;
+    --color-base-green-800: hsl(195, 46%, 40%);
+    --color-base-green-600: hsl(195, 46%, 35%);
+    --color-base-white-100: #FFFFFF;
+    --color-base-white-300: #F4FCFF;
+}
+
+html, body, input {
+    font-family: "Mulish", sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    padding: 1.6rem 2.8rem;
+    gap: 2.6rem;
+    background: var(--color-base-green-800);
+}
+
+.logo {
+    height: 4.0rem;
+    width: 4.0rem;
+}
+
+.wrapper-input label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.wrapper-input input {
+    width: 100%;
+    background-color: var(--color-base-green-600);
+    border: 0;
+    height: 4.0rem;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.wrapper-input input::placeholder {
+    color: var(--color-base-white-100);
+}
+
+.person {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+}
+
+.img-principal {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#principal, #second {
+    margin: 3.1rem 2.2rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.1rem;
+}
+
+.title h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.title ul {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+.button {
+    height: 4.0rem;
+    width: 4.0rem;
+}
+
+#principal p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+#principal {
+    margin-bottom: 3.4rem;
+}
+
+#title-second {
+    font-size: 2.4rem;
+    margin-bottom: 3.2rem;
+    font-weight: bold;
+}
+
+section figure img {
+    width: 15.1rem;
+    height: 8.4rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+
+.container div h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+}
+
+.container div p {
+    font-size: 1.4rem;
+}
+
+footer {
+    background: var(--color-base-green-800);
+    height: 6.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-base-white-100);
+    font-size: 1.6rem;
+}
+
+@media(min-width: 870px) {
+    header {
+        padding: 1.5rem 11.2rem;
+        margin-bottom: 4.4rem;
+    }
+
+    .main-separation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3.4rem;
+        padding: 0 10.9rem;
+    }
+
+    #principal, #second {
+        margin: 0;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.3rem;
+    }
+
+    .title h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 0.8rem;
+        
+    }
+
+    .button {
+        height: 2.7rem;
+        width: 2.7rem;
+    }
+
+    #principal {
+        margin-bottom: 2.5rem;
+    }
+
+    #principal p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+    }
+
+    #title-second {
+        font-size: 1.6rem;
+        margin-bottom: 2.2rem;
+    }
+    
+    section figure img {
+        width: 10.0rem;
+        height: 6.5rem;
+    }
+
+    .container div h2 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 0.4rem;
+    }
+
+    .container div p {
+        font-size: 1.1rem;
+    }
+}
